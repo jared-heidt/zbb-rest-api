@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "name": "The Foundation",
+      "artist": "Zac Brown Band",
+      "year": 2008,
+      "peak": 9,
+      "sales": 3400000,
+      "certification": "5xPlatinum",
+      "image": "http://localhost:5002/static/images/the-foundation.jpg"
+    },
+    {
+      "id": 2,
+      "name": "You Get What You Give",
+      "artist": "Zac Brown Band",
+      "year": 2010,
+      "peak": 1,
+      "sales": 1900000,
+      "certification": "3xPlatinum",
+      "image": "http://localhost:5002/static/images/ygwyg.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Uncaged",
+      "artist": "Zac Brown Band",
+      "year": 2012,
+      "peak": 1,
+      "sales": 1200000,
+      "certification": "Platinum",
+      "image": "http://localhost:5002/static/images/uncaged.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Jekyll + Hyde",
+      "artist": "Zac Brown Band",
+      "year": 2015,
+      "peak": 1,
+      "sales": 672400,
+      "certification": "Platinum",
+      "image": "http://localhost:5002/static/images/jekyll-hyde.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Welcome Home",
+      "artist": "Zac Brown Band",
+      "year": 2015,
+      "peak": 2,
+      "sales": 308600,
+      "certification": "none",
+      "image": "http://localhost:5002/static/images/welcome-home.jpg"
+    },
+    {
+      "id": 6,
+      "name": "The Owl",
+      "artist": "Zac Brown Band",
+      "year": 2019,
+      "peak": 2,
+      "sales": 137100,
+      "certification": "none",
+      "image": "http://localhost:5002/static/images/the-owl.jpg"
+    },
+    {
+      "id": 7,
+      "name": "The Comeback",
+      "artist": "Zac Brown Band",
+      "year": 2021,
+      "peak": 27,
+      "sales": null,
+      "certification": "none",
+      "image": "http://localhost:5002/static/images/the-comeback.jpg"
+    }
+  ]
