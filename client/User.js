@@ -1,12 +1,24 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
-const connectDB = (url) => {
-  return mongoose.connect(url, {
-    useNewUrlParser: true,
-    // useCreateIndex: true,
-    // useFindAndModify: false,
-    useUnifiedTopology: true,
-  })
-}
+const UserSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  email: {
+    type: String,
+    required: true
+  },
+  password: {
+    type: String,
+    required: true
+  },
+  date: {
+    type: Date,
+    default: Date.now
+  }
+});
 
-module.exports = connectDB
+const User = mongoose.model('User', UserSchema);
+
+module.exports = User;
