@@ -1,5 +1,5 @@
-require('../models/db');
-const Album = require('./Album');
+require('./db');
+const Album = require('./Album.js');
 
 
 /**

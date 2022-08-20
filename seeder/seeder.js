@@ -1,13 +1,13 @@
 const fs = require('fs');
 const colors = require('colors');
 const mongoose = require('mongoose');
-const connectDB = require('./src/db/connect')
+const connectDB = require('./src/connect')
 require('dotenv').config();
 
 // Load models
-const Album = require('./src/model/Album');
+const Album = require('./src/Album');
 
-connectDB(process.env.MONGO_URI)
+connectDB(process.env.MONGO_URI_LOCAL)
 
 // Read JSON files
 const album = JSON.parse(
