@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js News</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+       
+        <a href="/users/logout" class="btn btn-secondary">Logout</a>
+        <p class="lead mb-3">Welcome <%= user.name %></p>
+        <%- include('./partials/search.ejs') %>
+    </header>
+
+    <div class="wrapper">
+        <div class="news">
+            <% if(movies != null) { %>
+            <% movies.forEach(function(movie, index) { %>
+                <a href="/albums/<%= movie.id %>" class="news__card">
+                    <img src="<%= movie.image %>" alt="<%= movie.name %>">
+                    <h2><%= movie.name %></h2>
+                    <p><%= movie.artist %></p>
+                </a>
+            <% }) %>
+            <% } else { %>
+                No posts found.
+            <% } %>
+        </div>
+    </div>  
+</body>
+</html> 
