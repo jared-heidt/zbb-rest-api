@@ -1,7 +1,7 @@
 const express = require('express')
 const albumRouter = express.Router()
 const axios = require('axios')
-const { ensureAuthenticated } = require('../config/auth');
+const { ensureAuthenticated } = require('./auth');
 
 
 albumRouter.get('/', ensureAuthenticated, async(req, res) => {
