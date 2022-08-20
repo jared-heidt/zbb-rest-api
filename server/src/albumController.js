@@ -1,5 +1,5 @@
 require('../models/db');
-const Album = require('../models/Album');
+const Album = require('./Album');
 
 
 /**
