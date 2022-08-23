@@ -3,7 +3,7 @@ let cors = require('cors')
 const path = require('path');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
-const connectDB = require('./connect');
+const connectDB = require('./src/connect');
 const dotenv = require('dotenv');
 const passport = require('passport');
 const flash = require('connect-flash');
@@ -15,7 +15,7 @@ const app = express()
 const port = 5000
 
 // Passport Config
-require('./passport')(passport);
+require('./src/passport')(passport);
 
 app.use(cors())
 // Static Files
@@ -57,9 +57,9 @@ app.use(function(req, res, next) {
 });
 
 // Routes
-const albumRouter = require('./albumRoutes')
-app.use('/users', require('./userRoutes.js'));
-app.use('/', require('./indexRoutes.js'));
+const albumRouter = require('./src/albumRoutes')
+app.use('/users', require('./src/userRoutes.js'));
+app.use('/', require('./src/indexRoutes.js'));
 
 app.use('/albums', albumRouter)
 
