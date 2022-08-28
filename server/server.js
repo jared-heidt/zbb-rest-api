@@ -7,7 +7,7 @@ const app = express();
 console.log(typeof(app))
 const port = process.env.PORT || 5002;
 
-app.use('/static', express.static(path.join(__dirname, 'public')))
+app.use('/public', express.static(path.join(__dirname, 'public')))
 
 app.use(cors());
 app.use(express.json());
