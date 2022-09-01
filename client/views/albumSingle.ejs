@@ -9,16 +9,14 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">Zac Brown Band</div>
+        <a href="/albums" style="color: white">&larr; Back</a>
         <%- include('./partials/search.ejs') %>
     </header>
 
     <div class="wrapper">
         <div class="news-single">
-                <a href="/albums">&larr; Back</a>
                 <% if(article != null) { %>
-                    <br>
-                    <img src=<%= article.image %>>
+                    <img src=<%= article.image %> style="padding: 0px 0px 10px 0px">
                     <h2><%= article.name %></h2>
                     <p>Artist: <%= article.artist %></p>
                     <p>Released in <%= article.year %></p>
