@@ -74,4 +74,11 @@ h2 {
   margin: 0 auto;
   padding: 2rem;
 }
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */
